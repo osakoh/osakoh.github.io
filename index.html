@@ -2,343 +2,218 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- My Favicon -->
-    <link rel="icon" href="img/my-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Custom -->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Lightbox -->
-    <link rel="stylesheet" href="css/lightbox.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michael Okoh | Lead Software Engineer</title>
+  <meta name="description"
+    content="Lead software engineer building Python services, frontends, cloud systems and AI features. Open to remote roles in Canada.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232a5a8c'/%3E%3Ctext x='32' y='42' font-family='system-ui,Segoe UI,Arial,sans-serif' font-size='28' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EMO%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5f5f5f;
+      --link: #2a5a8c;
+    }
 
-    <title>Portfolio | M.O</title>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141414;
+        --text: #ededed;
+        --muted: #a3a3a3;
+        --link: #8fb8e3;
+      }
+    }
+
+    body {
+      margin: 0 auto;
+      max-width: 680px;
+      padding: 64px 24px 96px;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    h1 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin: 24px 0 4px;
+    }
+
+    h2 {
+      font-size: 21px;
+      margin: 64px 0 16px;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin: 32px 0 4px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .photo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .links a {
+      margin-right: 18px;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <!-- Navbar -->
-        <div class="container-fluid py-1">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
-                <!-- Just an image -->
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" height="30" alt="M.O" loading="lazy">
-                </a>
+  <img class="photo" src="img/photo.jpg" alt="Michael Okoh">
+  <h1>Michael Okoh</h1>
+  <p class="muted">Lead software engineer, working mostly in Python, based in Canada.</p>
+  <p class="links"><a href="#contact">Contact</a><a href="https://www.linkedin.com/in/michael-okoh/">LinkedIn</a><a
+      href="https://github.com/osakoh">GitHub</a></p>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+  <p>I'm a software engineer working mostly in Python, with PostgreSQL, React and Angular on AWS. As an independent
+    contractor I'm usually the only developer, and much of my recent work has been adding AI to products that clients
+    use every day. I stay with a project from planning through to the
+    handover guide.</p>
 
-                    <!-- Right links -->
+  <h2>Recent work</h2>
 
-                    <!-- Social Icons -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Icons -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/michael-okoh/">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="github.com/osakoh">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- End Navbar -->
+  <h3>Compliance reporting platform</h3>
+  <p>A UK fire safety consultancy's engineers enter inspection findings on a form and get the finished report back, with
+    a review and approval step for each role and a live dashboard of what's waiting. Reporting errors fell by 90%. When
+    the dashboard slowed as the library grew, I found the slow queries and fixed them with better queries and indexes.
+    At the first demo the engineers showed me why my template design was too rigid, and I rebuilt it with sections they
+    set up themselves. I also wrote the user guides.</p>
 
-    </header>
+  <h3>Building safety platform</h3>
+  <p>Several organizations share it, and each sees only its own buildings. AI reads the safety documents, a person
+    checks the values, and the rules sit in tables staff edit themselves. A rule change that took two weeks became a
+    five-minute edit, and assessments that took hours now take minutes. Each value the AI reads keeps the page and the
+    quote it came from, and each rule has its own test. The backend is Django and the frontend is Next.js.</p>
+  <p><a
+      href="https://www.twine.net/mokoh/c21aap0/multi-tenant-building-safety-platform-ai-extraction-with-human-review">Read
+      the full write-up</a></p>
 
-    <main class="py-4">
-        <div class="container-fluid flex-fill">
+  <h3>Invoice reading service</h3>
+  <p>It reads supplier invoices, from PDFs and phone photos, into the exact format a finance system needs, and sends
+    anything doubtful to a person. If one AI provider goes down, it switches to another. I cut reading time from over 90
+    seconds per invoice to under 25, and traced a separate three-minute step to four causes and brought it down to
+    seconds.</p>
+  <p>Customers connect with their own API keys, issued separately for live, test and development use, stored scrambled
+    and set to expire. The AI provider keeps none of the documents it reads. I ran the sessions with the cloud providers
+    where the hosting was chosen, and worked out from measured use that it would cost about $13 a month for 100,000
+    invoices. I worked
+    alongside the client's own developers.</p>
+  <p><a href="https://www.twine.net/mokoh/c1yzia0/ai-powered-financial-invoice-processing-api">Read the full
+      write-up</a></p>
 
-            <!-- Section: Background image -->
-            <section>
-                <img src="img/background.jpg" alt="background-img" class="img-bck">
-                <div class="centered text-white text-center">
-                    <h1 class="mb-3">Michael Okoh</h1>
-                    <h4 class="mb-3">Software Developer</h4>
-                    <a class="btn btn-outline-light btn-lg img-but m-1" href="#about " role="button">My Skills</a>
-                    <a class="btn btn-outline-light btn-lg img-but m-1" href="#projects" role="button ">My Projects</a>
-                </div>
-            </section>
-            <!-- End Background image -->
+  <h3>AI document assistant</h3>
+  <p>I built this one myself, end-to-end. It answers questions from a team's documents and shows the exact quote behind
+    each answer. An agent drafts updates when a source document changes and waits for a person to approve each one.
+    I tested it on 30 questions with known answers. Cutting documents into smaller pieces made each answer 40% cheaper,
+    and putting the best search results first raised the share of each answer backed by its sources from 91% to 98%.
+    I also ran four AI models on the same questions and marked them by hand before choosing one.</p>
+  <p>Each team's documents are kept apart in the code and again by the database itself. Uploads are scanned for
+    viruses, sign-in has a second step through an authenticator app, and new passwords are checked against known leaks.
+    I planted a document telling the AI to approve its own changes and ran it four times. It failed all four, because
+    only a person can approve. Each team has a spending limit, and it held when I sent 20 requests at once. I restored a
+    nightly backup as a test and got back all 391 rows. 306 tests run on each change, along with a check on answer
+    quality that blocks a change if answers get worse.</p>
 
-            <!-- Section: About me -->
-            <section class="text-center" id="about">
-                <h3 class="my-5">
-                    <strong>About me</strong>
-                </h3>
+  <h2>Earlier work</h2>
 
-                <div class="row">
-                    <div class="col-md-5">
-                        <img src="img/my_pic.png" alt="M.O" class="pic mb-4" width="200">
-                        <p><strong>Who's this guy?</strong></p>
-                        <p>
-                            I'm a Software Developer and also a Software Engineering post-graduate student at the University of Hertfordshire, UK.
-                        </p>
-                        <!-- Linkedin -->
-                        <a class="btn btn-primary social-icon m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/michael-okoh/" role="button"><i class="fab fa-linkedin-in"></i
-></a>
-                        <!-- Github -->
-                        <a class="btn btn-primary social-icon m-1" style="background-color: #333333" href="https://github.com/osakoh" role="button"><i class="fab fa-github"></i
-></a>
+  <h3>Cognizant, UK government open data platform</h3>
+  <p>I built the tool staff use to set up datasets, with sign-in through their existing GitHub accounts and a step by
+    step form that saves as they go, and approved changes pushed out to other systems automatically. I worked on a
+    FastAPI pipeline that checks the data councils send in about buildings and sites, where every upload is tracked
+    and errors reach the team in Slack.</p>
 
-                    </div>
+  <h3>Cognizant, cloud desktops and a financial platform</h3>
+  <p>I built security logging that gathered every log source of a client's cloud desktops into one audited feed, and
+    led the weekly meeting with that client's security team. Our team split one large desktop image into a small shared
+    base and separate images for each kind of user, including desktops with graphics cards. They start faster, and a
+    security patch now goes in one place. I replaced a set of deployment scripts with one GitLab pipeline. For a
+    platform financial advisors use to manage their clients' portfolios, I built custom interface components with
+    Stencil and TypeScript for the Angular app. Stencil components work in other frameworks too, which let them be
+    reused across products.</p>
 
-                    <div class="col-md-7 mb-4">
-                        <p><strong>2+ years:</strong></p>
-                        <!-- First row -->
-                        <div class="row">
-                            <div class="col-md-3 mb-4">
-                                <i class="fab fa-python fa-3x m-2"></i>
-                                <p>Python</p>
-                            </div>
-                            <div class="col-md-3 mb-4">
-                                <img class="skill-img m-2" src="img/django.png" alt="django">
-                                <p>Django</p>
-                            </div>
-                            <div class="col-md-3 mb-4">
-                                <i class="fab fa-html5 fa-3x m-2"></i>
-                                <p>HTML</p>
-                            </div>
-                            <div class="col-md-3 mb-4">
-                                <i class="fab fa-css3 fa-3x m-2"></i>
-                                <p>CSS</p>
-                            </div>
-                        </div>
-                        <!-- First row -->
+  <h3>Twig Education, a platform for school districts</h3>
+  <p>I moved a core library of over 400 files from Python 2 to Python 3, with its suite of about 1,500 tests running
+    throughout, which made it possible to upgrade Celery from version 3 to 5. I connected the platform to Salesforce
+    through background jobs that stay within its limits, with daily usage reports, and worked on Pardot marketing
+    sign-ups, Sage Pay card payments and SendGrid email.</p>
 
-                        <!-- Second row -->
-                        <p><strong>1+ year:</strong></p>
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <i class="fab fa-java fa-3x m-2"></i>
-                                <p>Java</p>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <i class="fab fa-github fa-3x m-2"></i>
-                                <p>GIT</p>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <i class="fab fa-bootstrap fa-3x m-2"></i>
-                                <p>Bootstrap</p>
-                            </div>
-                        </div>
-                        <!-- Second row -->
+  <h2>Projects of my own</h2>
 
-                        <!-- Third row -->
-                        <p><strong>Learning:</strong></p>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <img class="skill-img m-2" src="img/postgresql.png" alt="django">
-                                <p>PostgreSQL</p>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <i class="fab fa-js-square fa-3x m-2"></i>
-                                <p>JS</p>
-                            </div>
-                        </div>
-                        <!-- Third row -->
-                    </div>
-                </div>
-            </section>
-            <!-- Section: End About me -->
-            <hr class="my-5">
+  <h3>Shared task board for teams</h3>
+  <p>Teams plan work together in shared projects, move tasks along, comment, mention each other and attach files. When
+    one person changes something, everyone else sees it right away without reloading the page. Built end-to-end in
+    TypeScript,
+    with Node.js, React and PostgreSQL, and one set of data rules shared by the server, the web app and a command line
+    tool. Each request checks the person's role, and asking for a record you aren't allowed to see returns "not found".
+    Links people type can't run code, and too many comments in a minute get a polite wait message with the
+    draft kept. 403 tests pass against a real database.</p>
 
-            <!-- Section: Projects -->
-            <section class="text-center" id="projects">
-                <h3 class="my-5"> <strong>Projects</strong></h3>
+  <h3>Plant downtime tracker</h3>
+  <p>Operators log each time a production line stops, AI suggests the reason, and a supervisor confirms it. A separate
+    Node.js service checks the machine events as they arrive. I tested it with a simulated 10-minute feed of 2,000
+    events. All the good events were saved, and the repeated or broken ones were caught and sent back with the reason.
+  </p>
 
-                <div class="row">
-                    <!-- 1st -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="img/md-img/home.png" alt="">
-                            <div class="card-body">
-                                <div class="text-center">
-                                    <h4>Real Estate Website</h4>
-                                </div>
-                                <hr>
-                                <p class="text-truncate text-center">A Django real estate website for viewing properties with a working contact form and a customised admin page. This enabled potential customers to view properties for sale and make inquiries about them through the realtor
-                                    in charge of the property.</p>
-                                <hr>
-                                <a href="1.html" class="btn btn-outline-secondary d-flex justify-content-center">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 1st -->
+  <h3>YouTube stats stream</h3>
+  <p>It pulls a playlist's video views, likes and comments from the YouTube Data API into Kafka, with every message
+    checked against a fixed shape. Telegram sends an alert when the numbers change.</p>
 
-                    <!-- 2nd -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="img/bd/home.png" alt="">
-                            <div class="card-body">
-                                <div class="text-center">
-                                    <h4>Discussion board app</h4>
-                                </div>
-                                <hr>
-                                <p class="text-truncate text-center">
-                                    Built with a full authentication system. A discussion is started when a user creates a topic and other users post a reply to that topic.
-                                </p>
-                                <hr>
-                                <a href="2.html" class="btn btn-outline-secondary d-flex justify-content-center">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 2nd -->
+  <h3>Developer networking platform</h3>
+  <p>Developers build a profile with their work history and skills, write posts and comment, and their GitHub
+    repositories are pulled in live. I built it with React, Node.js, Express and MongoDB. Passwords are stored hashed,
+    and sign-in uses tokens.</p>
+  <p><a href="https://www.twine.net/mokoh/c1z7jo0/developer-networking-platform">Read the full write-up</a></p>
 
-                    <!-- 3rd -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="img/ed/overview.png" alt="">
-                            <div class="card-body">
-                                <div class="text-center">
-                                    <h4>Emotion Detection</h4>
-                                </div>
-                                <hr>
-                                <p class="text-truncate text-center">
-                                    A multinomial Naïve Bayes classifier capable of predicting 13 possible emotions (such as anger, enthusiasm, or fear) from a sentence or phrase.</p>
-                                <hr>
-                                <a href="3.html" class="btn btn-outline-secondary d-flex justify-content-center">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 3rd -->
+  <h2>What I work with</h2>
+  <p><strong>Backend:</strong> Python, Django, Django REST Framework, FastAPI, Flask, SQLAlchemy, Alembic, Pydantic,
+    Celery, RabbitMQ and Redis. Node.js with Express and Hono, and Zod.</p>
+  <p><strong>Frontend:</strong> React, Next.js, Angular, TypeScript, JavaScript, Tailwind CSS, Vite, TanStack Query,
+    Stencil web components, PrimeNG and Bootstrap.</p>
+  <p><strong>Data:</strong> PostgreSQL, MySQL, MongoDB and DuckDB. Kafka, Snowflake, dbt, Airflow and Pandas.</p>
+  <p><strong>Cloud:</strong> AWS (EKS, ECS, Lambda, SQS, S3, API Gateway, EventBridge and IAM) and DigitalOcean.</p>
+  <p><strong>Deployment:</strong> Docker, Docker Compose, Kubernetes, Terraform, GitHub Actions, GitLab CI/CD, Nginx,
+    Gunicorn, Caddy, systemd, Coolify and Linux servers.</p>
+  <p><strong>Monitoring:</strong> Sentry, Prometheus, Grafana, Datadog, Fluentd, OpenTelemetry and Langfuse.</p>
+  <p><strong>AI:</strong> the Anthropic and OpenAI APIs, LangGraph, MCP, retrieval with pgvector, and evals with ragas.
+  </p>
+  <p><strong>Testing:</strong> pytest, Vitest and Playwright.</p>
+  <p><strong>Security:</strong> OWASP guidance, two-step sign-in, Argon2id and scrypt password hashing, PostgreSQL
+    row-level security, ClamAV virus scanning, Docker secrets, least-privilege AWS IAM and Fluentd audit logging.</p>
 
-                    <!-- 4th -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="img/cms/admin_dashboard.png" alt="">
-                            <div class="card-body">
-                                <div class="text-center">
-                                    <h4>Customer Management Application</h4>
-                                </div>
-                                <hr>
-                                <p class="text-truncate text-center">
-                                    A multinomial Naïve Bayes classifier capable of predicting 13 possible emotions (such as anger, enthusiasm, or fear) from a sentence or phrase.</p>
-                                <hr>
-                                <a href="4.html" class="btn btn-outline-secondary d-flex justify-content-center">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 4th -->
+  <h2>Education and certificates</h2>
+  <h3>Education</h3>
+  <p>MSc Software Engineering with Advanced Research, University of Hertfordshire<br>
+    BEng Electrical and Electronic Engineering, Landmark University</p>
 
-                    <!-- 5th -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="img/etc/initial.png" alt="">
-                            <div class="card-body">
-                                <div class="text-center">
-                                    <h4>Booking Software for Extra Tuition Centre (ETC)</h4>
-                                </div>
-                                <hr>
-                                <p class="text-truncate text-center">
-                                    A software that enables students to book lessons from a tutor. To reschedule or cancel a lesson, this system ensures that a booking has been made by the student.
-                                    <hr>
-                                    <a href="5.html" class="btn btn-outline-secondary d-flex justify-content-center">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 5th -->
+  <h3>Certificates</h3>
+  <p>AWS Certified DevOps Engineer Professional<br>
+    Certified Kubernetes Application Developer<br>
+    SnowPro Core</p>
+  <p>Also: Full Stack Intelligence Engineer training, weekly Google Gemini training through 2024, and a Microsoft Power
+    BI bootcamp.</p>
 
-                    <!-- 6th -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <img class="card-img-top" src="img/qs/show.png" alt="">
-                            <div class="card-body">
-                                <div class="text-center">
-                                    <h4>Quote Scrapper</h4>
-                                </div>
-                                <hr>
-                                <p class="text-truncate text-center">
-                                    This exciting project successfully extracts quotes (content, author, & tags) from quotes.toscrape.com/.
-                                    <hr>
-                                    <a href="6.html" class="btn btn-outline-secondary d-flex justify-content-center">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 6th -->
-
-                </div>
-            </section>
-            <!-- Section: End Projects -->
-            <hr class="my-5">
-
-            <!-- Section: Contact -->
-            <section class="text-center" id="contact">
-                <h3 class="my-5"><strong>Contact me</strong></h3>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-6">
-                        <form>
-                            <!-- Name input -->
-                            <div class="form-group mb-4">
-                                <label for="form4Example1">Name</label>
-                                <input type="text" id="form4Example1" class="form-control" />
-                            </div>
-
-                            <!-- Email input -->
-                            <div class="form-group mb-4">
-                                <label for="form4Example2">Email address</label>
-                                <input type="email" id="form4Example2" class="form-control" />
-                            </div>
-
-                            <!-- Message input -->
-                            <div class="form-group mb-4">
-                                <label for="form4Example3">Message</label>
-
-                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                            </div>
-
-                            <!-- Submit button -->
-                            <button type="submit" class="btn btn-outline-secondary btn-block mb-4">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-
-
-
-        </div>
-    </main>
-
-    <div class="container-fluid py-1">
-        <footer id="main-footer" class="py-4 navbar-dark bg-secondary text-white text-center">
-            Copyright ©
-            <span class="year">2021</span> Portfolio | M.O
-        </footer>
-    </div>
-
-
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="js/jquery-3.5.1.slim.min.js "></script>
-    <script src="js/bootstrap.bundle.min.js "></script>
-
-    <!-- lightbox js  -->
-    <script src="js/lightbox.js "></script>
-
-    <!-- Custom js  -->
-    <script src="js/custom.js "></script>
+  <h2 id="contact">Contact</h2>
+  <p>Open to remote contract and permanent roles in Canada. My CV is available on request.</p>
+  <p class="links"><a href="mailto:michael.osakoh@gmail.com">michael.osakoh@gmail.com</a><a
+      href="https://www.linkedin.com/in/michael-okoh/">LinkedIn</a><a href="https://github.com/osakoh">GitHub</a></p>
 </body>
 
 </html>
