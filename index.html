@@ -7,6 +7,13 @@
   <title>Michael Okoh | Lead Software Engineer</title>
   <meta name="description"
     content="Lead software engineer building Python services, frontends, cloud systems and AI features. Open to remote roles in Canada.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://osakoh.github.io/">
+  <meta property="og:title" content="Michael Okoh | Lead Software Engineer">
+  <meta property="og:description"
+    content="Recent work: an AI-assisted building safety platform, an invoice reading service, and a document assistant tested on 30 questions. Python, React, AWS.">
+  <meta property="og:image" content="https://osakoh.github.io/img/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232a5a8c'/%3E%3Ctext x='32' y='42' font-family='system-ui,Segoe UI,Arial,sans-serif' font-size='28' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EMO%3C/text%3E%3C/svg%3E">
   <style>
@@ -70,6 +77,23 @@
       object-fit: cover;
     }
 
+    figure {
+      margin: 24px 0 28px;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
     .links a {
       margin-right: 18px;
     }
@@ -125,12 +149,24 @@
     I tested it on 30 questions with known answers. Cutting documents into smaller pieces made each answer 40% cheaper,
     and putting the best search results first raised the share of each answer backed by its sources from 91% to 98%.
     I also ran four AI models on the same questions and marked them by hand before choosing one.</p>
+  <figure>
+    <img src="img/answer-with-sources.webp" width="1019" height="1060" loading="lazy"
+      alt="An answer about password length, with the source page open beside it and the quoted lines highlighted">
+    <figcaption>Each numbered marker in the answer opens the source page, with the quoted lines highlighted.
+    </figcaption>
+  </figure>
   <p>Each team's documents are kept apart in the code and again by the database itself. Uploads are scanned for
     viruses, sign-in has a second step through an authenticator app, and new passwords are checked against known leaks.
     I planted a document telling the AI to approve its own changes and ran it four times. It failed all four, because
     only a person can approve. Each team has a spending limit, and it held when I sent 20 requests at once. I restored a
     nightly backup as a test and got back all 391 rows. 306 tests run on each change, along with a check on answer
     quality that blocks a change if answers get worse.</p>
+  <figure>
+    <img src="img/suggested-edit.webp" width="670" height="960" loading="lazy"
+      alt="An AI-drafted change to a document, marked in red and green, waiting for a person to accept, edit or dismiss it">
+    <figcaption>When a source document changes, the AI drafts the fix. Nothing changes until a person accepts it.
+    </figcaption>
+  </figure>
 
   <h2>Earlier work</h2>
 
